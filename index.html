@@ -96,10 +96,9 @@
 
         //L.mapbox.accessToken = config.mapboxAccessToken;
 // Create a map in the div #map
-		var bounds = L.latLngBounds(L.latLng(config.south,config.west), L.latLng(config.north,config.east));
         var map = L.map('map', { 
             center: config.mapFocus,
-            zoom: 13, minZoom : 13, maxzoom: 17, maxBounds : bounds, zoomControl :false });
+            zoom: 14, minZoom : 13, maxzoom: 17,});
         map.touchZoom.enable();
         L.control.zoom({position : 'bottomleft'}).addTo(map);
 		    
